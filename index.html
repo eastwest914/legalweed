@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LILAC Dispensary | Premier Cannabis Shop in Newark, NJ</title>
+  <meta name="description" content="LILAC Dispensary is your premier Cannabis Shop in Newark, NJ. Explore top-shelf cannabis flowers, pre-rolled joints, vapes, gummies, accessories, and expert consultations.">
+  <meta name="keywords" content="Cannabis Shop, Cannabis Store, Weed Shop, Cannabis Dispensary, Marijuana Dispensary, Weed Store, Cannabis Products, Cannabis Flowers, Pre Rolled Joints, Cannabis Accessories, Smoking Accessories, Grinders, Rolling Papers, Cannabis Vape, Cannabis Gummies, Cannabis Retailer, Cannabis Boutique, Legal Cannabis, Legal Weed, Premium Cannabis, Wellness Cannabis, Cannabis Lifestyle, Cannabis Consultation, Smoking Products, Vape Shop, Cannabis Vapes, Cannabis Delivery">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-dark: #0f172a;
+      --bg-card: #1e293b;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-light: #f8fafc;
+      --accent: #0d9488;
+      --accent-hover: #0f766e;
+      --bg-light: #f8fafc;
+      --border-color: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-main);
+      background-color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Header & Navigation */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(8px);
+      color: var(--text-light);
+      border-bottom: 1px solid #334155;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+    }
+
+    .logo span {
+      color: var(--accent);
+      font-weight: 400;
+      font-size: 1.1rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .header-cta {
+      background-color: var(--accent);
+      color: #ffffff !important;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 600 !important;
+      transition: background-color 0.2s ease;
+    }
+
+    .header-cta:hover {
+      background-color: var(--accent-hover);
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      padding: 6rem 1.5rem;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #94a3b8;
+      margin-bottom: 2rem;
+    }
+
+    .hero p a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      color: #ffffff;
+      padding: 0.8rem 1.8rem;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+    }
+
+    .btn-secondary {
+      border: 1px solid #475569;
+      color: var(--text-light);
+      padding: 0.8rem 1.8rem;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+      background-color: #334155;
+    }
+
+    .store-hours-badge {
+      display: inline-block;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      background: #1e293b;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      border: 1px solid #334155;
+    }
+
+    /* Common Section Styles */
+    section {
+      padding: 5rem 1.5rem;
+    }
+
+    .section-title {
+      font-size: 2.25rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* About Section */
+    .about-section {
+      background-color: #ffffff;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .about-text p {
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      font-size: 1.05rem;
+    }
+
+    .about-text strong {
+      color: var(--text-main);
+    }
+
+    .about-text a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .about-list {
+      list-style: none;
+      margin-top: 1.5rem;
+    }
+
+    .about-list li {
+      position: relative;
+      padding-left: 1.75rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .about-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    .about-image {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Services Section */
+    .services-section {
+      background-color: var(--bg-light);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .service-card {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-main);
+    }
+
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .service-card p a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    /* Why Choose Us Section */
+    .why-section {
+      background-color: #ffffff;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .why-card {
+      background-color: var(--bg-light);
+      padding: 2.5rem;
+      border-radius: 8px;
+      border-top: 4px solid var(--accent);
+    }
+
+    .why-card h4 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--text-main);
+    }
+
+    .why-card p {
+      color: var(--text-muted);
+    }
+
+    .why-card p a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      background-color: var(--bg-light);
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+
+    .faq-question {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+    }
+
+    .faq-answer {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+    }
+
+    .faq-answer a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      background-color: #ffffff;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .contact-info {
+      background-color: var(--bg-light);
+      padding: 2.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    .contact-info p {
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-info ul {
+      list-style: none;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-info li {
+      margin-bottom: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .contact-info strong {
+      color: var(--text-main);
+    }
+
+    .contact-info a {
+      color: var(--accent);
+    }
+
+    .map-container {
+      width: 100%;
+      height: 100%;
+      min-height: 380px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Keywords Section (No Headings) */
+    .keywords-section {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      padding: 3rem 1.5rem;
+    }
+
+    .keywords-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      list-style: none;
+    }
+
+    .keywords-list li a {
+      display: inline-block;
+      background-color: #1e293b;
+      color: #94a3b8;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.88rem;
+      border: 1px solid #334155;
+      transition: all 0.2s ease;
+    }
+
+    .keywords-list li a:hover {
+      color: #ffffff;
+      background-color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #090d16;
+      color: #64748b;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #1e293b;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .about-grid, .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .map-container {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        LILAC <span>Dispensary</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Our Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:9733700420" class="header-cta">Call 973-370-0420</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Your Premier Local Cannabis Shop in Newark, NJ</h1>
+        <p>Explore premium legal weed, top-tier cannabis flowers, delicious edibles, pre-rolled joints, vapes, and high-quality smoking accessories at our local <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Shop</a> in a welcoming, boutique setting.</p>
+        <div class="hero-buttons">
+          <a href="#services" class="btn-primary">Explore Products</a>
+          <a href="#contact" class="btn-secondary">Visit Our Store</a>
+        </div>
+        <div class="store-hours-badge">Open Daily: Premium Quality & Expert Consultation</div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About LILAC Dispensary</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p><strong>LILAC Dispensary</strong> is Newark's trusted destination for legal, premium-grade products. As a leading local <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Store</a>, we are dedicated to providing a safe, sophisticated, and educational atmosphere for both experienced enthusiasts and curious newcomers.</p>
+            <p>Located in the heart of Downtown Newark, our boutique dispensary curates an extensive selection of strains, flavorful edibles, and essential smoking accessories. As your top <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Weed Shop</a>, our goal is to elevate your lifestyle and wellness through top-tier products and personalized service.</p>
+            <ul class="about-list">
+              <li>100% Fully Licensed & Legal Cannabis Shop</li>
+              <li>Curated Selection of Premium Brands</li>
+              <li>Expert Cannabis Consultation & Support</li>
+            </ul>
+          </div>
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1536939459926-301728717817?auto=format&fit=crop&w=800&q=80" alt="LILAC Cannabis Shop Interior">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <h2 class="section-title">Our Products & Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>Cannabis Flowers</h3>
+            <p>Hand-selected Indica, Sativa, and Hybrid strains grown by top cultivators. Experience rich terpene profiles with our premium <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Flowers</a>.</p>
+          </div>
+          <div class="service-card">
+            <h3>Pre Rolled Joints</h3>
+            <p>Ready-to-enjoy rolls packed with fresh, full-bud flower. Enjoy smooth and convenient sessions with our expertly rolled <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Pre Rolled Joints</a>.</p>
+          </div>
+          <div class="service-card">
+            <h3>Cannabis Vapes</h3>
+            <p>Clean, reliable vape cartridges and disposables. Enjoy discrete, fast-acting dosing with high-quality <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Vape</a> options.</p>
+          </div>
+          <div class="service-card">
+            <h3>Cannabis Gummies</h3>
+            <p>Precisely dosed edibles and chews. Designed for consistent results, delicious flavor, and long-lasting enjoyment with <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Gummies</a>.</p>
+          </div>
+          <div class="service-card">
+            <h3>Smoking Accessories</h3>
+            <p>Everything you need for a complete session—premium grinders, rolling papers, glass pipes, vape batteries, and top <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Smoking Accessories</a>.</p>
+          </div>
+          <div class="service-card">
+            <h3>Cannabis Consultation</h3>
+            <p>One-on-one expert advice tailored to your goals. Book a personalized <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Consultation</a> to choose the ideal strain and dosage.</p>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#contact" class="btn-primary">Visit Our Cannabis Shop Today</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why" class="why-section">
+      <div class="container">
+        <h2 class="section-title">Why Choose Lilac Dispensary?</h2>
+        <div class="why-grid">
+          <div class="why-card">
+            <h4>Curated Premium Selection</h4>
+            <p>We source only lab-tested, high-grade items from compliant growers to guarantee purity and safety across all our <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Products</a>.</p>
+          </div>
+          <div class="why-card">
+            <h4>Expert & Friendly Staff</h4>
+            <p>Our team takes the guesswork out of buying at our licensed <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Dispensary</a>. Whether seeking relaxation or focus, we guide you to the right choice.</p>
+          </div>
+          <div class="why-card">
+            <h4>Prime Newark Location</h4>
+            <p>Conveniently situated on Halsey St in Downtown Newark, offering a comfortable, high-end retail boutique experience as your premier <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Weed Store</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">1. What documents do I need to shop at LILAC Dispensary?</div>
+            <div class="faq-answer">As a licensed dispensary, we require a valid government-issued photo ID proving you are 21 years of age or older to enter our <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Marijuana Dispensary</a>.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">2. Do you offer products for beginners at your weed store?</div>
+            <div class="faq-answer">Yes! We carry low-dose options, balanced hybrid strains, and <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Legal Weed</a> products suitable for first-time consumers.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">3. What types of cannabis products do you stock?</div>
+            <div class="faq-answer">Our inventory features flowers, pre-rolls, vapes, concentrates, edibles, gummies, and essential items from top <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Accessories</a> brands.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">4. Can I buy legal weed online or arrange for local delivery?</div>
+            <div class="faq-answer">Yes, you can browse our inventory on our website to check stock and learn about our flexible purchasing and <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Delivery</a> options.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">5. Where is your cannabis dispensary located?</div>
+            <div class="faq-answer">We are conveniently located at 79 Halsey St 1st Fl, Newark, NJ 07102. Visit our <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Retailer</a> boutique or call us at 973-370-0420 for assistance.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact Information</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p><strong>Business Name:</strong> LILAC Dispensary</p>
+            <ul>
+              <li><strong>Address:</strong> 79 Halsey St 1st Fl, Newark, NJ 07102</li>
+              <li><strong>Phone:</strong> <a href="tel:9733700420">973-370-0420</a></li>
+              <li><strong>Website URL:</strong> <a href="https://lilacdispensary.com/" target="_blank" rel="noopener">https://lilacdispensary.com/</a></li>
+            </ul>
+            <a href="tel:9733700420" class="btn-primary" style="display: inline-block; margin-top: 1rem;">Call Store Now</a>
+          </div>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.92357487575!2d-74.17176669999999!3d40.7398077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c253a1252b4b7d%3A0x7ed440b202c6d5c1!2sLILAC%20Dispensary!5e1!3m2!1sen!2s!4v1790751526461!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keywords Section (No Headings) -->
+    <section class="keywords-section">
+      <div class="container">
+        <ul class="keywords-list">
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Shop</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Store</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Weed Shop</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Dispensary</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Marijuana Dispensary</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Weed Store</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Products</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Flowers</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Pre Rolled Joints</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Accessories</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Smoking Accessories</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Grinders</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Rolling Papers</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Vape</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Gummies</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Retailer</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Boutique</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Legal Cannabis</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Legal Weed</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Premium Cannabis</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Wellness Cannabis</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Lifestyle</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Consultation</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Smoking Products</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Vape Shop</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Vapes</a></li>
+          <li><a href="https://lilacdispensary.com/" target="_blank" rel="noopener">Cannabis Delivery</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; LILAC Dispensary — All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
